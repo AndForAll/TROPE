@@ -1,0 +1,33 @@
+<div id="scroll-stage"
+     scroll-watch="{from:from, to: to}"
+     sw-style="{height: currentVideo.video.params + 'px'}"
+     sw-broadcast="{
+       $rootScope: true,
+       'scrolling': true
+                   }"></div>
+
+  <div id='play_content'>
+    <div class="container">
+      <h1 class= 'videoTitleHide'
+      scroll-watch="{from:from, to: to }"
+      sw-class="{
+        videoTitleShow: $percentage > 1,
+        videoTitlegone:  $percentage  > 2
+
+      }">{{currentVideo.title}}</h1>
+
+      <!-- <div class='frame-display'>
+        <h1 id='frame_num'>STEP:  {{step}}</h1>
+        </div> -->
+
+      <div class='imghide'
+      scroll-watch="{from:from, to: to }"
+      sw-class="{
+        imgshow: $percentage  > 1
+      }"
+      ><img id="video" ng-src='{{imgsrc}}'/></div>
+
+  </div>
+  </div>
+  <!-- FOR TITLE AND OVERLAYS -->
+  <div ui-view class="overlay"></div>

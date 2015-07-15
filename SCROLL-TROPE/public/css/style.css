@@ -1,0 +1,714 @@
+html { box-sizing:border-box;}
+*,:before,:after{ box-sizing:inherit}
+
+/*
+
+MAIN DOC BODY / INDEX.HTML
+
+*/
+
+body{
+  font-family: 'Biryani', sans-serif;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: yellow;
+}
+
+/*attempt at menu*/
+/*.home_menu {
+  z-index: 5000;
+  top:0;
+  width: 100%;
+  height: 5%;
+  background: white;
+  padding-top:5%;
+  position: fixed;
+}
+
+.home_menu .img{
+  float: right;
+  position: fixed;
+}*/
+
+/*
+
+HOME PAGE WITH GALLERY
+
+*/
+
+/*FOR NEW SPLASH */
+#home_page{
+	width:100%;
+	text-align:center;
+  font-weight:900;
+  height:150%;
+  top: 0;
+  left: 0;
+  margin-top: -8%;
+
+}
+
+#title{
+	text-transform:uppercase;
+  background: yellow;
+  /*padding-top:25%;*/
+  height: 0;
+  padding-bottom:54%;
+  width:100%;
+}
+
+#title h1{
+	text-transform:uppercase;
+  font-size:10em;
+}
+
+#main-title {
+	letter-spacing:30px;
+  font-weight: 900;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  padding-top:15%;
+
+}
+
+#sub-title{
+	font-weight:200;
+  font-family: 'Biryani', sans-serif;
+
+}
+
+/*.home-gallery-container {
+  background:white;
+  text-align: center;
+  width: 100%;
+  left:0;
+}*/
+
+.home-gallery-container {
+  background:white;
+  text-align: center;
+  width: 100.5%;
+  left:0;
+  margin-left: -.5%;
+}
+
+
+.galley-home {
+  width: 90%;
+  background:white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-title{
+  letter-spacing:30px;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: 'Biryani', sans-serif;
+}
+
+.page-subtitle{
+  letter-spacing:10px;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 5%;
+  /*border-bottom-width:thin;
+  border-style: solid;
+  border-color: black;*/
+}
+
+.video-title{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 200;
+  letter-spacing:10px;
+  font-size: 0.8em;
+}
+
+
+
+.gallery-item {
+  padding:2%;
+	padding-top:0%;
+  display:block;
+  width:28%;
+  margin:.5% 1%;
+  float:left;
+  /*margin-left: 4%;*/
+  padding-left: 2%;
+
+	padding-bottom: 5%;
+	padding-top:5%;
+	text-align:center;
+	overflow: hidden;
+  transition: all 0.9s ease;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  background: white;
+}
+
+.gallery-item:hover{
+  background:yellow;
+  border-color: yellow;
+}
+
+.galley-home{
+  background: white;
+  height: 0;
+  padding-bottom:50%;
+  padding-top: 5%;
+  /*margin-left: -2%;*/
+  /*width: 90%;*/
+}
+
+/*PLAY STATE WOOOOOO*/
+
+/*FOR PLAY MODAL*/
+.remote_message {
+  /*z-index: 1000;
+  background:yellow;
+  width:40%;
+  height: 50%;
+  margin-top: 10%;
+  margin-left:auto;
+  margin-right:auto;
+  /*border-style: solid;
+  border-width: 5px;
+  border-color: black;*/
+  font-family: 'Biryani', sans-serif;
+  text-align: center;
+  z-index: 2000;
+  /*float: left;*/
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50%;
+  /*background: white;*/
+}
+
+.remote_message  p{
+  font-weight: 400;
+  letter-spacing:5px;
+  font-size: 14px;
+}
+
+.remote_message .trope {
+  text-decoration: underline;
+  font-size: 20px;
+  background: white;
+}
+
+.remote_message #bottom-copy {
+  background: white;
+}
+
+.remote_message h4{
+  font-size: 2em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 60%;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-title-modal{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 900;
+  letter-spacing:40px;
+  font-size: 10em;
+  color: black;
+  /*position: absolute;*/
+  /*top:0;*/
+  /*left:0;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.home-btn{
+  width: 10%;
+  top: 0;
+  left:0;
+  z-index: 100000;
+  position: fixed;
+  fill: #000000;
+
+}
+
+.arrow-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0;
+  padding: 5%;
+  margin-top: -15%;
+  /*margin-top: 20%;*/
+  /*margin-top: 30%;*/
+  text-align: center;
+  color: white;
+}
+
+.top-arrow-down {
+  width: 100%;
+  margin-top: -10%;
+}
+
+.imghide{
+  display: none;
+}
+
+.imgshow{
+  display: block;
+}
+
+.modal-hide{
+  display:none;
+}
+
+.modal{
+  display:block;
+}
+
+
+#video {
+	position:fixed;
+	z-index:-1;
+	/*top:0;
+	right:0;
+	bottom:0;
+	left:0;*/
+	width:110%;
+  /*width:1200px;*/
+	/*height:100%;*/
+  /*height:0;
+  padding-bottom: 70%;
+  background-size: 160%;
+  background-position:50% 50%;*/
+}
+
+.videoTitleShow{
+  letter-spacing:30px;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: 'Biryani', sans-serif;
+}
+
+
+/*///for display frame numbers for testing...*/
+.frame-display{
+  z-index: 50000;
+
+  font-family: 'Biryani', sans-serif;
+  float:left;
+  position: fixed;
+  background-color: transparent;
+  width: 20%;
+  padding: 10%;
+}
+
+#frame_num{
+  font-size: 4em;
+  letter-spacing:30px;
+  font-weight: 900;
+  color: yellow;
+}
+
+/*CSS FOR PLAY STATE*/
+#scroll-stage {
+  /*height:1000px;*/
+}
+
+#play_content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#play_content .container{
+    /*-webkit-transform: translate(-5%, -5%);
+  -moz-transform: translate(-5%, -5%);
+  -ms-transform: translate(-5%, -5%);
+  -o-transform: translate(-5%, -5%);
+  transform: translate(-5%, -5%);*/
+  position: absolute;
+  /*top: 50%;
+  left: 50%;*/
+	width:auto;
+	height:100%;
+  /*position:fixed;*/
+}
+
+.videoTitleShow {
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  /*background-color:#fff;*/
+  /*z-index: 10;*/
+  display:block;
+}
+
+.videoTitleShow{
+  position: absolute;
+  font-size: 10em;
+  text-align: center;
+  /*z-index: 10;*/
+  /*color: #fff;*/
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:30px;
+  margin-left:auto;
+  margin-right:auto;
+  color: black;
+  /*background: url(https://s-media-cache-ak0.pinimg.com/736x/2f/6a/ea/2f6aea86ebfb9ab3164b40c84c54227b.jpg), white;
+  -webkit-background-clip: text;
+  color: transparent;*/
+
+  letter-spacing:30px;
+  font-weight: 900;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  padding-top:15%;
+  display:block;
+}
+
+.videoTitleHide {
+  display:none;
+}
+
+.videoTitlegone{
+  display:none;
+}
+
+/* your style begins here */
+
+#stuff{
+	position: fixed;
+	z-index:1;
+}
+
+#container{
+	width:50%;
+}
+
+#phone_control{
+		width:100%;
+		text-align: center;
+		background:#91D3CF;
+		padding:20px;
+		margin-left:auto;
+		margin-right:auto;
+		/*position:fixed;*/
+		height:10000px;
+		display:block;
+	}
+
+
+/*//PHONE SITE*/
+#phone-title: {
+  text-transform:uppercase;
+  text-align: center;
+  background-color: black;
+
+  /*padding-top:25%;*/
+  height: 0;
+  padding-bottom:54%;
+}
+
+
+#phone-main-title{
+  text-align: center;
+  letter-spacing:20px;
+  font-weight: 700;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  padding-top:10%;
+  font-size: 5em !important;
+}
+
+
+.hbtn {
+  padding:2%;
+	padding-top:0%;
+  display:block;
+  width:80%;
+  margin:.5% 1%;
+  /*float:left;*/
+  height:15%;
+  margin-left: auto;
+  margin-right: auto;
+
+	padding-bottom: 5%;
+	padding-top:5%;
+	text-align:center;
+	overflow: hidden;
+  transition: all 0.9s ease;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  /*background: white;*/
+}
+
+.hbtn h2{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 200;
+  letter-spacing:10px;
+  font-size: 3em;
+}
+
+.hbtn:hover{
+  background:yellow;
+  border-width: 0px;
+}
+
+.phone_container{
+  text-align: center;
+  padding-top:10%;
+}
+
+#remote-input {
+	font-size: 2.5em;
+	border: 0px;
+  border-bottom:5px;
+  border-style:solid;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body{
+      background: yellow;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body{
+      background: yellow;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      height: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      width: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body{
+      background: yellow;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      height: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      width: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    body{
+      background: yellow;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      height: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    #videophone {
+    	position:fixed;
+    	z-index:-1;
+    	/*top:0;
+    	right:0;
+    	bottom:0;
+    	left:0;*/
+    	/*width:110%;*/
+      width: 100%;
+      /*width:1200px;*/
+    	/*height:100%;*/
+      /*height:0;
+      padding-bottom: 70%;
+      background-size: 160%;
+      background-position:50% 50%;*/
+    }
+
+}

@@ -1,0 +1,32 @@
+<!-- <img id="video" src="../media/frames-blink/frame_001.jpg" alt="" />
+
+<div id="shade"></div>
+<div id='container'>
+  <div id='modal'ng-style="modalStyle">
+    <h3>To control video scroll with your phone</h3>
+    <h3>Go to the website and input the following code</h3>
+    <h1>????</h1>
+    <button ng-click="modalStyle={'display':'none'}">X</button>
+  </div>
+</div> -->
+
+<div id="scroll-stage"
+     scroll-watch="{from:from, to: to}"
+     sw-style="{height: video.video.params + 'px'}"
+     sw-broadcast="{
+       $rootScope: true,
+       'scrolling': true
+                   }"></div>
+
+  <div id='play_content'>
+    <div class="container">
+      <div class='videoTitle'
+      scroll-watch="{from:from, to: to }"
+      sw-class="{
+        videoTitleHide: $percentage > 1
+      }"
+      ><h1>{{video.title}}</h1></div>
+    <img id="video" ng-src='{{imgsrc}}'/>
+
+  </div>
+  </div>

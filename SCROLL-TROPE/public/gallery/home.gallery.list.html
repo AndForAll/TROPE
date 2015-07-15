@@ -1,0 +1,11 @@
+<div class='galley-home'>
+<h2 class='page-title'>TROPE TUTORIALS</h2>
+<h3 class='page-subtitle'>connecting the culture of the curious</h3>
+  <div ng-repeat="video in videos" class='gallery-item'>
+    <!-- <a ui-sref="contacts.detail({contactId:contact.id})">{{contact.name}}</a> -->
+    <!-- <a ui-sref="Gallery.play({id:video.attributes.vidId})"><h3>{{video.attributes.title}}</h3> -->
+
+    <!-- FOR PARSE TURN IT BACK TO video.attributes.vidId -->
+    <h2 class='video-title' ng-click="playVideo(video.id)">{{video.title}}</h2>
+  </div>
+<div>

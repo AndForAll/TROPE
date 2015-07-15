@@ -1,0 +1,14 @@
+{
+  "name": "videoTrope-parse-testing",
+  "version": "1.0.0",
+  "description": "tests for various parse processes needed in the video-trope web app",
+  "main": "save-frames-to-parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex and Lucy",
+  "license": "ISC",
+  "dependencies": {
+    "kaiseki": "*"
+  }
+}

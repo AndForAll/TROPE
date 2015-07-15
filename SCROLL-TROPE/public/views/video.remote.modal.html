@@ -1,0 +1,34 @@
+<!-- <div class="modal"
+scroll-watch="{from:from, to: to }"
+sw-class="{
+  videoTitleHide: $percentage > 1
+}">
+  <h1 id="modal-title">WOULD YOU LIKE TO CONNECT A REMOTE?</h1>
+  <p id="top-copy">Trope tutorials allows you to connect multiple remotes so you can control your tutorial from where you want!</p>
+  <h4 id="url">{{remoteUrl}}</h4>
+
+  <p id='under-url-copy'>go to trope.cc on a device of your choice and input this code to connect your remote!</p>
+  <p id='bottom-copy'>Don't worry if you don't want to connect, just start scrolling!</p>
+</div> -->
+
+
+
+<div class="modal"
+id="scroll-stage"
+     scroll-watch="{from:from, to: to}"
+     sw-class="{
+       modal-hide: $percentage  > 2
+     }"
+     >
+  <!-- <h1 id="modal-title">CONNECT A REMOTE</h1>
+  <p id="top-copy">Trope tutorials allows you to connect multiple remotes so you can control your tutorial from where you want!</p>
+  <h4 id="url">{{remoteUrl}}</h4>
+
+  <p id='under-url-copy'>go to <span class="trope">trope.cc</span> on a device of your choice and input this code to connect your remote!</p>
+  <p id='bottom-copy'>Don't worry if you don't want to connect, just start scrolling!</p> -->
+  <h1 class="video-title-modal">{{video.title}}</h1>
+
+  <div class='arrow-container'>
+    <img src="/media/assets/arrow-down.svg" class="top-arrow-down">
+  </div>
+</div>
