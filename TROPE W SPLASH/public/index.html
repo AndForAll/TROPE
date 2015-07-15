@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Video Scroll</title>
+
+<link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+
+  </head>
+  <body >
+
+<!--   <footer class="collapse" id='collapseFooter'>
+    <div class="footer-btns">
+    </div>
+  </footer> -->
+
+  <footer>
+    <button class="btn-footer" type="button" data-toggle="collapse" data-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">^</button>
+    <div class='collapse' id='footerCollapse'>
+      <button id="btnHome" class="btnfoot">HOME</button>
+      <button id="btnConnect" class="btnfoot">CONNECT</button>
+    </div>
+  </footer>
+
+  <div id="app"></div>
+
+  <!-- Template for home page OLD DESKTOP HOME-->
+  <script type="text/html" id="tpl_home">
+    <div class="page" id="home">
+      <h1><img id='logo' src="./media/logo_2.png"></h1>
+      <button class='btnStartVideo'> V I D E O </button>
+    </div>
+  </script>
+
+  <!-- TEMPLATE FOR NEW SPLASH HOME -->
+  <script type="text/html" id="tpl_home_splash">
+    <div class="page" id="home_page" >
+				<div id="title">
+					<h1 id="main-title">trope</h1>
+					<h2 id="sub-title">COMING SOON<h2>
+				</div>
+    </div>
+  </script>
+
+  <!-- Template for Video play page-->
+<script id="tpl_play" type="text/html">
+
+    <img id="video" src="./frames/frame_001.jpg" alt="" />
+
+    <div id="shade"></div>
+    <div id='container'>
+      <div id='modal'>
+        <h3>To control video scroll with your phone</h3>
+        <h3>Go to the website and input the following code</h3>
+        <h1><%= code %></h1>
+        <button class="btnClosePhoneCode">X</button>
+      </div>
+    </div>
+
+
+</script>
+
+  <!-- Template for mobile home page-->
+<script id="tpl_mobilehome" type="text/html">
+    <div class="page" id="phone_home">
+      <div id="content">
+          <h1>Please input key given by computer</h1>
+          <form class="login">
+            <input type="text" placeholder="CODE HERE" id="key"/>
+            <input type="submit" value="➡" id="btnKeySub" />
+          </form>
+      </div>
+    </div>
+</script>
+
+  <!-- Template for mobile home post key-->
+<script id="tpl_mobileControl" type="text/html">
+    <div class="page" id="phone_control">
+      <div id="content">
+      <h1><img src='./media/trope_o.png' id='o'></h1>
+        <h1 id='phone_display'>YOU'RE CONNECTED!</h1>
+<!--         <h1><%= message %></h1>
+        <h1 id='roomId'><%= id %></h1> -->
+        <!-- <button id="test">TEST</button> -->
+
+      </div>
+    </div>
+</script>
+
+  <!-- Template for Error page-->
+<script id="tpl_error" type="text/html">
+    <div class="page" id="error">
+      <div id="content">
+        <h1>SORRY THERE WAS AN ERROR</h1>
+        <h1><%= message %></h1>
+      </div>
+    </div>
+</script>
+
+
+  <!-- ADD THIS LIBRARY FOR SOCKET.IO -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
