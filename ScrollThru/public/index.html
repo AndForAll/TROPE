@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Video Scroll</title>
+   
+<link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+  <body > 
+  
+  <div id="app"></div>
+
+  <!-- Template for home page-->
+  <script type="text/html" id="tpl_home">
+    <div class="page" id="home">
+      <h2>WELCOME</h2>
+      <button class='btnStartVideo'> V I D E O </button>
+    </div>
+  </script>
+
+  <!-- Template for Video play page-->
+<script id="tpl_play" type="text/html">
+
+    <img id="video" src="./frames/frame_001.jpg" alt="" />
+
+    <div id="shade"></div>
+    <div id='container'>
+      <div id='modal'>
+        <h3>To control video scroll with your phone</h3>
+        <h3>Go to the website and input the following code</h3>
+        <h1><%= code %></h1>
+        <button class="btnClosePhoneCode">X</button>
+      </div>
+    </div>
+
+
+</script>
+
+  <!-- Template for mobile home page-->
+<script id="tpl_mobilehome" type="text/html">
+    <div class="page" id="phone_home">
+      <div id="content">
+          <h1>Please input key given by computer</h1>
+          <form class="login">
+            <input type="text" placeholder="CODE HERE" id="key"/>
+            <input type="submit" value="➡" id="btnKeySub" />
+          </form>
+      </div>
+    </div>
+</script>
+
+  <!-- Template for mobile home post key-->
+<script id="tpl_mobileControl" type="text/html">
+    <div class="page" id="phone_control">
+      <div id="content">
+        <h1>YOU'RE IN</h1>
+        <h1><%= message %></h1>
+        <h1 id='roomId'><%= id %></h1>
+        <button id="test">TEST</button>
+      </div>
+    </div>
+</script>
+
+  <!-- Template for Error page-->
+<script id="tpl_error" type="text/html">
+    <div class="page" id="error">
+      <div id="content">
+        <h1>SORRY THERE WAS AN ERROR</h1>
+        <h1><%= message %></h1>
+      </div>
+    </div>
+</script>
+    
+
+  <!-- ADD THIS LIBRARY FOR SOCKET.IO -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="./js/javascript-video-scrubber.js" type="text/javascript"></script>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/moment.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>    
+  </body>
+</html>

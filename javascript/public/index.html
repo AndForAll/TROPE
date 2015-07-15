@@ -1,0 +1,87 @@
+<!--//
+/*
+Javascript-video-scrubber Demo
+Created by Gary Hepting and the Dev Team at Emerge Interactive
+Fork, follow and watch on Github at https://github.com/ghepting/javascript-video-scrubber
+Visit Emerge Interctive at http://emergeinteractive.com/
+*/
+//-->
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="./js/javascript-video-scrubber.js" type="text/javascript"></script>
+	<link type="text/css" rel="stylesheet" href="./styles.css" />
+	<script type="text/javascript">
+		<!--//
+
+		totalFrames = 502; // the number of images in the sequence of JPEG files (this could be calculated server-side by scanning the frames folder)
+
+		$(document).ready(function() {
+			resizeAdjustments(); // adjust the size of video placeholder image to fit the screen and keep aspect ratio (zoom crop)
+		});
+
+		//-->
+	</script>
+</head>
+<body onload="resizeAdjustments();" onresize="resizeAdjustments();" onorientationchange="resizeAdjustments();">
+	
+	<!-- overlay grid pattern (optional) -->
+	<div id="overlay">
+		<h4 id="header" style="z-index: 100"> THIS IS HEADER</h4>
+		<h3 id="subheader" style="z-index: 100"> THIS IS SUBHEADER</h3>
+	</div>
+	
+	<!-- placeholder image for video (required) -->
+	<img id="video" src="./frames/image_000000.jpg" alt="" />
+	
+	<!-- preload the video frames (required) -->
+	<script type="text/javascript">
+		<!--//
+		// image filenames in frames folder should be "image_000000.jpg" through "image_000098.jpg"
+		for(i = 0; i < totalFrames; i++) { // loop for each image in sequence
+			images[i] =  new Image(); // add image object to array
+			images[i].src = "./frames/image_"+pad(i, 6)+".jpg"; // set the source of the image object
+		}
+		//-->
+	</script>
+
+	<!-- content to be placed on top of video (optional) -->
+	<div id="content">
+	
+
+		<div class="article">
+
+	
+		
+
+			
+
+
+		
+
+
+		</div>
+
+		<script type="text/javascript">var switchTo5x=true;</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">stLight.options({publisher: "567dbfb2-c629-4ae0-b33e-e1786f637203"}); </script>
+
+		<div style="height:10em;"></div>
+		
+		<div id="footer">
+
+			
+			
+			
+
+		</div>
+
+		<div style="height:10em;"></div>
+
+	</div>
+
+
+</body>
+</html>
