@@ -1,0 +1,14 @@
+
+<!-- THIS IS FROM ORIGINAL WILL NEED TO PUT THE HEIGHT MECH IN
+A RESOLVE IN BEFORE THEATRECTRL -->
+<div class='page_container' id="scroll-stage"
+     scroll-watch="{from:from, to: to}"
+     sw-style="{height: currentTrope.frames.params + 'px'}"
+     sw-broadcast="{
+       $rootScope: true,
+       'scrolling': true
+                   }"></div>
+
+<div ui-view class="frame_tpl_container"></div>
+
+<div ui-view="overlay" class="overlay_tpl_container"></div>

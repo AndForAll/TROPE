@@ -1,0 +1,320 @@
+/*G E N E R A L*/
+body{
+  font-family: 'Biryani', sans-serif;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: yellow;
+}
+
+.page_container{
+
+}
+
+/*H  O  M  E*/
+
+#home_container{
+
+}
+
+.gallery_tpl_container{
+
+}
+
+#title{
+	text-transform:uppercase;
+  background: yellow;
+  /*padding-top:25%;*/
+  height: 0;
+  padding-bottom:54%;
+  width:100%;
+}
+
+#title h1{
+	text-transform:uppercase;
+  font-size:10em;
+}
+
+/*H  O  M  E     G  A   L  L  E  R  Y*/
+
+#home_gallery{
+
+}
+
+.title_container{
+
+}
+
+.page-title{
+	letter-spacing:30px;
+  font-weight: 900;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  padding-top:15%;
+
+}
+
+.page-subtitle{
+	font-weight:200;
+  font-family: 'Biryani', sans-serif;
+}
+
+.gallery_container{
+  background:white;
+  text-align: center;
+  width:100%;
+  position:relative;
+}
+
+.gallery_child{
+  text-align:center;
+  transition: all 0.9s ease;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  background: white;
+}
+
+.gallery_child:hover{
+  background:yellow;
+  border-color: yellow;
+}
+
+.gallery_child h2{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 200;
+  letter-spacing:10px;
+  font-size: 0.8em;
+}
+
+.gallery_child a{
+  text-decoration: none;
+  color: black;
+}
+
+/*T H E A T R E*/
+
+#scroll-stage{
+
+}
+
+.frame_tpl_container{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: red;
+  z-index:10;
+}
+
+.overlay_tpl_container{
+
+}
+
+/*T H E A T R E  F R A M E S*/
+#frames_container{
+  width: 100%;
+  height:auto;
+
+}
+
+#frames_container h2{
+
+}
+
+#frames_container img{
+  width:100%;
+
+}
+
+/*//PUT THIS BACK IN I LIKED IT*/
+
+.home-btn{
+  width: 10%;
+  top: 0;
+  left:0;
+  z-index: 100000;
+  position: fixed;
+
+  /*outline: yellow solid 10px;*/
+}
+
+.home-btn svg {
+  fill: yellow;
+  stroke: #000;
+  stroke-width:1px;
+  /*outline: yellow solid 5px;*/
+}
+
+.arrow-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0;
+  padding: 5%;
+  margin-top: -15%;
+  /*margin-top: 20%;*/
+  /*margin-top: 30%;*/
+  text-align: center;
+  color: white;
+}
+
+.top-arrow-down {
+  width: 100%;
+  margin-top: -10%;
+}
+
+.hbtn {
+  padding:2%;
+	padding-top:0%;
+  display:block;
+  width:80%;
+  margin:.5% 1%;
+  /*float:left;*/
+  height:15%;
+  margin-left: auto;
+  margin-right: auto;
+
+	padding-bottom: 5%;
+	padding-top:5%;
+	text-align:center;
+	overflow: hidden;
+  transition: all 0.9s ease;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  /*background: white;*/
+}
+
+.hbtn h2{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 200;
+  letter-spacing:10px;
+  font-size: 3em;
+}
+
+.hbtn:hover{
+  background:yellow;
+  border-width: 0px;
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+
+
+}
