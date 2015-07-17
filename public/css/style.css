@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html { box-sizing:border-box;}
 *,:before,:after{ box-sizing:inherit}
 
@@ -7,6 +8,9 @@ MAIN DOC BODY / INDEX.HTML
 
 */
 
+=======
+/*G E N E R A L*/
+>>>>>>> origin/clean-and-simple-version
 body{
   font-family: 'Biryani', sans-serif;
   width: 100%;
@@ -16,6 +20,7 @@ body{
   background: yellow;
 }
 
+<<<<<<< HEAD
 /*attempt at menu*/
 /*.home_menu {
   z-index: 5000;
@@ -47,6 +52,19 @@ HOME PAGE WITH GALLERY
   top: 0;
   left: 0;
   margin-top: -8%;
+=======
+.page_container{
+
+}
+
+/*H  O  M  E*/
+
+#home_container{
+
+}
+
+.gallery_tpl_container{
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -64,6 +82,7 @@ HOME PAGE WITH GALLERY
   font-size:10em;
 }
 
+<<<<<<< HEAD
 #main-title {
 	letter-spacing:30px;
   font-weight: 900;
@@ -144,6 +163,41 @@ HOME PAGE WITH GALLERY
 	padding-top:5%;
 	text-align:center;
 	overflow: hidden;
+=======
+/*H  O  M  E     G  A   L  L  E  R  Y*/
+
+#home_gallery{
+
+}
+
+.title_container{
+
+}
+
+.page-title{
+	letter-spacing:30px;
+  font-weight: 900;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  padding-top:15%;
+
+}
+
+.page-subtitle{
+	font-weight:200;
+  font-family: 'Biryani', sans-serif;
+}
+
+.gallery_container{
+  background:white;
+  text-align: center;
+  width:100%;
+  position:relative;
+}
+
+.gallery_child{
+  text-align:center;
+>>>>>>> origin/clean-and-simple-version
   transition: all 0.9s ease;
   text-transform: uppercase;
   border-style: solid;
@@ -152,11 +206,16 @@ HOME PAGE WITH GALLERY
   background: white;
 }
 
+<<<<<<< HEAD
 .gallery-item:hover{
+=======
+.gallery_child:hover{
+>>>>>>> origin/clean-and-simple-version
   background:yellow;
   border-color: yellow;
 }
 
+<<<<<<< HEAD
 .galley-home{
   background: white;
   height: 0;
@@ -237,6 +296,57 @@ HOME PAGE WITH GALLERY
 
 }
 
+=======
+.gallery_child h2{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 200;
+  letter-spacing:10px;
+  font-size: 0.8em;
+}
+
+.gallery_child a{
+  text-decoration: none;
+  color: black;
+}
+
+/*T H E A T R E*/
+
+#scroll-stage{
+
+}
+
+.frame_tpl_container{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: red;
+  z-index:10;
+}
+
+.overlay_tpl_container{
+
+}
+
+/*T H E A T R E  F R A M E S*/
+#frames_container{
+  width: 100%;
+  height:auto;
+
+}
+
+#frames_container h2{
+
+}
+
+#frames_container img{
+  width:100%;
+
+}
+
+/*//PUT THIS BACK IN I LIKED IT*/
+
+>>>>>>> origin/clean-and-simple-version
 .home-btn{
   width: 10%;
   top: 0;
@@ -245,7 +355,10 @@ HOME PAGE WITH GALLERY
   position: fixed;
 
   /*outline: yellow solid 10px;*/
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/clean-and-simple-version
 }
 
 .home-btn svg {
@@ -273,6 +386,7 @@ HOME PAGE WITH GALLERY
   margin-top: -10%;
 }
 
+<<<<<<< HEAD
 .imghide{
   display: none;
 }
@@ -456,6 +570,8 @@ HOME PAGE WITH GALLERY
 }
 
 
+=======
+>>>>>>> origin/clean-and-simple-version
 .hbtn {
   padding:2%;
 	padding-top:0%;
@@ -491,6 +607,7 @@ HOME PAGE WITH GALLERY
   border-width: 0px;
 }
 
+<<<<<<< HEAD
 .phone_container{
   text-align: center;
   padding-top:10%;
@@ -506,6 +623,8 @@ HOME PAGE WITH GALLERY
   margin-right: auto;
 }
 
+=======
+>>>>>>> origin/clean-and-simple-version
 
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -515,10 +634,13 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+<<<<<<< HEAD
     body{
       background: yellow;
     }
 
+=======
+>>>>>>> origin/clean-and-simple-version
 }
 
 /* Portrait */
@@ -546,9 +668,12 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+<<<<<<< HEAD
     body{
       background: yellow;
     }
+=======
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -559,6 +684,7 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -575,6 +701,8 @@ HOME PAGE WITH GALLERY
       background-size: 160%;
       background-position:50% 50%;*/
     }
+=======
+>>>>>>> origin/clean-and-simple-version
 }
 
 /* Landscape */
@@ -584,6 +712,7 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -601,6 +730,8 @@ HOME PAGE WITH GALLERY
       background-position:50% 50%;*/
     }
 
+=======
+>>>>>>> origin/clean-and-simple-version
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -611,9 +742,12 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+<<<<<<< HEAD
     body{
       background: yellow;
     }
+=======
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -623,6 +757,7 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -639,6 +774,8 @@ HOME PAGE WITH GALLERY
       background-size: 160%;
       background-position:50% 50%;*/
     }
+=======
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -648,6 +785,7 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -664,6 +802,9 @@ HOME PAGE WITH GALLERY
       background-size: 160%;
       background-position:50% 50%;*/
     }
+=======
+
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -675,9 +816,12 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
+<<<<<<< HEAD
     body{
       background: yellow;
     }
+=======
+>>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -687,6 +831,7 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -703,6 +848,9 @@ HOME PAGE WITH GALLERY
       background-size: 160%;
       background-position:50% 50%;*/
     }
+=======
+
+>>>>>>> origin/clean-and-simple-version
 }
 
 /* Landscape */
@@ -712,6 +860,7 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
+<<<<<<< HEAD
     #videophone {
     	position:fixed;
     	z-index:-1;
@@ -728,5 +877,8 @@ HOME PAGE WITH GALLERY
       background-size: 160%;
       background-position:50% 50%;*/
     }
+=======
+
+>>>>>>> origin/clean-and-simple-version
 
 }

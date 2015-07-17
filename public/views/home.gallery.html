@@ -1,0 +1,23 @@
+<div class="page_container" id="home_gallery" >
+
+  <div class="title_container" layout="column" layout-align="space-around center">
+
+    <h2 class='page-title'>TROPE TUTORIALS</h2>
+    <h3 class='page-subtitle'>connecting the culture of the curious</h3>
+
+  </div>
+
+  <!-- WERE USING MATERIAL FOR ANGULAR HERE
+  THIS IS A ROW FORMAT EACH DIV THAT IS REPEATED
+  FOR EACH TROPE THERE IS IN THE DATABASE SO EACH OPTION
+  WILL BE UNIFORM IN SIZE AND RESPONSIVE ETC -->
+  <div class='gallery_container' layout="row" layout-align="space-around center" layout-wrap layout-padding>
+
+    <!-- THIS WILL BE REPEATED FOR EACH TROPE IN THE GALLERY -->
+    <div class="gallery_child" ng-repeat='trope in tropes' flex="30">
+      <a ui-sref="Theatre.main({id: $index})"><h2 >{{trope.title}}</h2></a>
+    </div>
+
+  </div>
+
+</div>

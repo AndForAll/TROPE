@@ -1,15 +1,23 @@
 /*
 
 TROPE
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/clean-and-simple-version
 This version of trope is it's base interaction, no remote, just scrolling to video scrub
 
 */
 
+<<<<<<< HEAD
+=======
+//create express server
+>>>>>>> origin/clean-and-simple-version
 var express = require('express');
 var app = module.exports = express();
 var bodyParser = require('body-parser');
 var server = require('http').Server(app);
+<<<<<<< HEAD
 //joining socket & express so we can run through same port
 var io = require('socket.io')(server);
 //for module way that was kinda working
@@ -20,6 +28,33 @@ var mobileDetect = require('mobile-detect');
 var port = 3000;
 var rooms = [];
 //to do post request etc... may not need this in the end.
+=======
+
+//currently the amazon web server that we are going to use re-routes port 3000 to port 80 / http
+var port = 3000;
+
+//to check server is running
+server.listen(port, function() {
+    console.log('Server running at port:' + port);
+});
+
+
+
+//Point server to our static site
+//as well as putting libs under just /lib for ease
+
+app.use('/', express.static(__dirname + '/public'));
+app.use('/lib', express.static(__dirname + '/public/lib'));
+app.use('/js', express.static(__dirname + '/public/js'));
+
+
+//UNUSED RIGHT NOW BUT MAY BE HELPFUL IN NEAR NEAR FUTURE
+////////////////////////////////////////////////////////////
+
+//USE THIS FOR RESTUFUL & CORS STUFF
+//NOT DELETING FOR NOW AS THIS MAY BE A MORE SECURE WAY TO PULL OUR IMAGES OFF THE SERVER
+
+>>>>>>> origin/clean-and-simple-version
 // app.use(bodyParser.urlencoded({
 //     extended: false
 // }));
@@ -35,6 +70,7 @@ var rooms = [];
 //     console.log('### requesting ---> ' + url);
 //     next();
 // });
+<<<<<<< HEAD
 
 //point express server to our client side
 
@@ -288,3 +324,5 @@ io.on('connection', function(socket){
     };
 
   }); // E N D  O F  S O C K E T CONNECT
+=======
+>>>>>>> origin/clean-and-simple-version
