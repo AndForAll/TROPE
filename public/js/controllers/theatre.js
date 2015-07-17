@@ -13,6 +13,7 @@ $scope.from = 0
 $scope.to = -1;
 $scope.step = 1;
 $scope.imgsrc = $scope.currentTrope.frames.paths[1];
+// $scope.frameImage 
 
 $scope.scrolledStage = null;
 

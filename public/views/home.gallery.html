@@ -2,7 +2,7 @@
 
   <div class="title_container" layout="column" layout-align="space-around center">
 
-    <h2 class='page-title'>TROPE TUTORIALS</h2>
+    <!-- <h2 class='page-title'>TROPE TUTORIALS</h2> -->
     <h3 class='page-subtitle'>connecting the culture of the curious</h3>
 
   </div>
@@ -14,7 +14,7 @@
   <div class='gallery_container' layout="row" layout-align="space-around center" layout-wrap layout-padding>
 
     <!-- THIS WILL BE REPEATED FOR EACH TROPE IN THE GALLERY -->
-    <div class="gallery_child" ng-repeat='trope in tropes' flex="30">
+    <div class="gallery_child" ng-repeat='trope in tropes' flex="33">
       <a ui-sref="Theatre.main({id: $index})"><h2 >{{trope.title}}</h2></a>
     </div>
 

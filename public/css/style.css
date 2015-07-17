@@ -32,8 +32,10 @@ body{
 }
 
 #title h1{
+  text-align: center;
 	text-transform:uppercase;
   font-size:10em;
+  background-color: yellow;
 }
 
 /*H  O  M  E     G  A   L  L  E  R  Y*/
@@ -43,21 +45,22 @@ body{
 }
 
 .title_container{
-
+  padding-bottom:10%;
 }
 
 .page-title{
 	letter-spacing:30px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Biryani', sans-serif;
   padding-bottom: 20px;
-  padding-top:15%;
 
 }
 
 .page-subtitle{
-	font-weight:200;
+	font-weight:100;
   font-family: 'Biryani', sans-serif;
+  font-size:1em;
+  letter-spacing:5px;
 }
 
 .gallery_container{
@@ -65,21 +68,24 @@ body{
   text-align: center;
   width:100%;
   position:relative;
+  height: 100%;
 }
 
 .gallery_child{
   text-align:center;
   transition: all 0.9s ease;
   text-transform: uppercase;
+  background:yellow;
+  border-color: yellow;
   border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  background: white;
+  border-width: thin;
+
+
 }
 
 .gallery_child:hover{
-  background:yellow;
-  border-color: yellow;
+  border-color: black;
+  background: white;
 }
 
 .gallery_child h2{
@@ -87,6 +93,9 @@ body{
   font-weight: 200;
   letter-spacing:10px;
   font-size: 0.8em;
+  padding-top:15%;
+  padding-bottom:15%;
+
 }
 
 .gallery_child a{
@@ -110,7 +119,11 @@ body{
 }
 
 .overlay_tpl_container{
-
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:15;
 }
 
 /*T H E A T R E  F R A M E S*/
@@ -125,8 +138,44 @@ body{
 }
 
 #frames_container img{
-  width:100%;
+  /*height:100%;*/
+  width: 100%;
 
+}
+
+.frame{
+
+}
+
+.trope_frame{
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  width:100%;
+  overflow: hidden;
+  background-size: 160%;
+  padding-bottom:100%;
+  top:0;
+}
+
+/*T H E A T R E  O V E R L A Y S*/
+#overlays_container{
+  width: 100%;
+  height:auto;
+}
+
+.overlay_text_container{
+  padding-top:20%;
+}
+
+#overlays_container h2{
+  letter-spacing:30px;
+  font-weight: 700;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  font-size: 4em;
+  color: white;
 }
 
 /*//PUT THIS BACK IN I LIKED IT*/
