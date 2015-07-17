@@ -12,7 +12,10 @@ console.log($scope.currentTrope);
 $scope.from = 0
 $scope.to = -1;
 $scope.step = 1;
-$scope.imgsrc = $scope.currentTrope.frames.paths[1];
+//for large images
+// $scope.imgsrc = $scope.currentTrope.frames.paths.large[1];
+//for sized thesis images
+$scope.imgsrc = $scope.currentTrope.frames.paths.sizedthesis[1];
 
 $scope.scrolledStage = null;
 
@@ -25,7 +28,7 @@ $scope.percentLoaded = 0;
 
 //FROM http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm
 // Preload the images; then, update display when returned.
-preloader.preloadImages( $scope.currentTrope.frames.paths ).then(
+preloader.preloadImages( $scope.currentTrope.frames.paths.sizedthesis ).then(
                    function handleResolve( imageLocations ) {
 
                        // Loading was successful.
@@ -71,7 +74,7 @@ $scope.$on('scrolling', function($evt, a, locals) {
         //change image directly
         if($scope.targetStep != $scope.step){
             $scope.step = $scope.targetStep;
-            $scope.imgsrc = $scope.currentTrope.frames.paths[$scope.step];
+            $scope.imgsrc = $scope.currentTrope.frames.paths.sizedthesis[$scope.step];
             console.log($scope.step);
         }
 

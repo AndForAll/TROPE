@@ -53,66 +53,52 @@ angular.module('myApp', ['ui.router',
           srcpadding: 6,
           fileprefix: 'image_',
           frameRate: 24
-      }];
-  //   $rootScope.global.newVideos = [{
-  //   title: 'BURY' ,
-  //   subtitle: '',
-  //   description: '' ,
-  //   length: 1955,
-  //   createdBy: 'CHEN',
-  //   id: 'BURY02',
-  //   video: {},
-  //   srcpadding: 6,
-  //   fileprefix: 'image_',
-  //   frameRate: 24
-  // },{
-  //   title: 'YOGA' ,
-  //   subtitle: '',
-  //   description: '' ,
-  //   length: 2697,
-  //   // length: 2500,
-  //   createdBy: '',
-  //   id: 'YOGA01',
-  //   video: {},
-  //   srcpadding: 6,
-  //   fileprefix: 'image_',
-  //   frameRate: 24
-  // },{
-  //   title: 'KINETIC' ,
-  //   subtitle: '',
-  //   description: '' ,
-  //   length: 48,
-  //   createdBy: '',
-  //   id: 'BURY01',
-  //   video: {},
-  //   srcpadding: 6,
-  //   fileprefix: 'image_',
-  //   frameRate: 100
-  // },{
-  //   title: 'BLINK BLINK' ,
-  //   subtitle: '',
-  //   description: '' ,
-  //   length: 6168,
-  //   createdBy: '',
-  //   id: 'BB01',
-  //   video: {},
-  //   srcpadding: 6,
-  //   fileprefix: 'image_',
-  //   frameRate: 24
-  // },{
-  //   title: 'FREE THROW' ,
-  //   subtitle: '',
-  //   description: '' ,
-  //   length: 490,
-  //   createdBy: '',
-  //   id: 'ASH01',
-  //   video: {},
-  //   srcpadding: 6,
-  //   fileprefix: 'image_',
-  //   frameRate: 24
-  // }];
-
-
+      },{
+        title: 'BURY' ,
+        subtitle: '',
+        description: '' ,
+        length: 1955,
+        createdBy: 'CHEN',
+        id: 'BURY02',
+        video: {},
+        srcpadding: 6,
+        fileprefix: 'image_',
+        frameRate: 24
+      },{
+        title: 'YOGA' ,
+        subtitle: '',
+        description: '' ,
+        length: 2697,
+        // length: 2500,
+        createdBy: '',
+        id: 'YOGA01',
+        video: {},
+        srcpadding: 6,
+        fileprefix: 'image_',
+        frameRate: 24
+      },{
+        title: 'KINETIC' ,
+        subtitle: '',
+        description: '' ,
+        length: 48,
+        createdBy: '',
+        id: 'BURY01',
+        video: {},
+        srcpadding: 6,
+        fileprefix: 'image_',
+        frameRate: 100
+      },{
+        title: 'BLINK BLINK' ,
+        subtitle: '',
+        description: '' ,
+        length: 6168,
+        createdBy: '',
+        id: 'BB01',
+        video: {},
+        srcpadding: 6,
+        fileprefix: 'image_',
+        frameRate: 24
+      } ];
 
   // //here we use the videofactory service we made so we can get
   // //the paths to all the img urls and other info we need

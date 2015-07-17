@@ -1,0 +1,88 @@
+
+
+
+
+//////////////////////////////////
+/////// P  A  T  H  S ////////////
+
+// L A R G E  I M A G E S // 1.5MB
+http://media.trope.cc/large/frames_{{ID}}/image_{{FRAME_NUMBER}}.jpg
+
+frames_ASH01
+frames_BB01
+frames_BURY01
+frames_BURY02
+frames_YOGA01
+
+// S I Z E D  -  T H E S I S  I M A G E S // 560KB
+http://media.trope.cc/sized-thesis/frames_{{ID}}/image_{{FRAME_NUMBER}}.png
+
+frames_ASH01
+frames_BB01
+frames_BURY01
+frames_BURY02
+frames_YOGA01
+
+//////////////////////////////////////////////
+/////// T R O P E / O B J E C T S ////////////
+
+  {
+    title: 'YOGA' ,
+    subtitle: '',
+    description: '' ,
+    length: 2697,
+    // length: 2500,
+    createdBy: '',
+    id: 'YOGA01',
+    frames: {},
+    srcpadding: 6,
+    fileprefix: 'image_',
+    frameRate: 24
+  },{
+      title: 'FREE THROW' ,
+      subtitle: '',
+      description: '' ,
+      length: 490,
+      createdBy: '',
+      id: 'ASH01',
+      frames: {},
+      srcpadding: 6,
+      fileprefix: 'image_',
+      frameRate: 24
+  }
+  {
+//   title: 'BURY' ,
+//   subtitle: '',
+//   description: '' ,
+//   length: 1955,
+//   createdBy: 'CHEN',
+//   id: 'BURY02',
+//   video: {},
+//   srcpadding: 6,
+//   fileprefix: 'image_',
+//   frameRate: 24
+// }
+    {
+//   title: 'KINETIC' ,
+//   subtitle: '',
+//   description: '' ,
+//   length: 48,
+//   createdBy: '',
+//   id: 'BURY01',
+//   video: {},
+//   srcpadding: 6,
+//   fileprefix: 'image_',
+//   frameRate: 100
+// }
+    {
+//   title: 'BLINK BLINK' ,
+//   subtitle: '',
+//   description: '' ,
+//   length: 6168,
+//   createdBy: '',
+//   id: 'BB01',
+//   video: {},
+//   srcpadding: 6,
+//   fileprefix: 'image_',
+//   frameRate: 24
+// }
