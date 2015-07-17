@@ -66,9 +66,8 @@ body{
 .gallery_container{
   background:white;
   text-align: center;
-  width:100%;
-  position:relative;
   height: 100%;
+
 }
 
 .gallery_child{
@@ -114,7 +113,7 @@ body{
   top:0;
   left:0;
   width:100%;
-  background-color: red;
+  background-color: yellow;
   z-index:10;
 }
 
@@ -144,19 +143,20 @@ body{
 }
 
 .frame{
-
+  background-color:yellow;
 }
 
 .trope_frame{
   background-size: cover;
   background-repeat:no-repeat;
   background-position: 50% 50%;
-  position: relative;
+  position: absolute;
   width:100%;
   overflow: hidden;
-  background-size: 160%;
-  padding-bottom:100%;
+  background-size: 110%;
+  padding-bottom:60%;
   top:0;
+  z-index: 100;
 }
 
 /*T H E A T R E  O V E R L A Y S*/

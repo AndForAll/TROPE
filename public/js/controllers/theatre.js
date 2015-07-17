@@ -3,8 +3,7 @@ var angular = angular || {};
 angular.module('app.controller.theatre', [])
 .controller('TheatreCtrl', function($scope, $rootScope, $stateParams, preloader) {
 
-  //testing something
-  console.log($stateParams);
+// $scope.showinfo = false;
 
 $scope.currentTrope = $rootScope.global.tropes[$stateParams.id];
 console.log($scope.currentTrope);
@@ -14,9 +13,13 @@ $scope.to = -1;
 $scope.step = 1;
 
 //for large images
-// $scope.imgsrc = $scope.currentTrope.frames.paths.large[1];
+// $scope.imgsrc = $scope.currentTrope.frames.large[1];
 //for sized thesis images
-$scope.imgsrc = $scope.currentTrope.frames.sizedthesis[1];
+$scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
+
+// $scope.frameImage = {
+//   'background-image': 'url('+$scope.imgsrc+')'
+// };
 
 $scope.scrolledStage = null;
 
@@ -67,6 +70,7 @@ $scope.$on('scrolling', function($evt, a, locals) {
 
       $scope.$apply(function animloop() {
       console.log('SCROLLLLLLLLLL');
+
         //get the frame it should be on based on percentage
         $scope.targetStep = Math.round(locals.$progress * $scope.currentTrope.length);
 
@@ -74,8 +78,18 @@ $scope.$on('scrolling', function($evt, a, locals) {
         if($scope.targetStep != $scope.step){
             $scope.step = $scope.targetStep;
             $scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
+            // $scope.frameImage = {
+            //   'background-image': 'url('+$scope.imgsrc+')'
+            // };
             console.log($scope.step);
         }
+
+
+        // if($scope.step == 0){
+        //   $scope.showinfo = true;
+        // }else {
+        //   $scope.showinfo = false;
+        // }
 
       });
   }); // END OF SCROLLING

@@ -65,18 +65,6 @@ angular.module('myApp', ['ui.router',
         fileprefix: 'image_',
         frameRate: 24
       },{
-        title: 'YOGA' ,
-        subtitle: '',
-        description: '' ,
-        length: 2697,
-        // length: 2500,
-        createdBy: '',
-        id: 'YOGA01',
-        frames: {},
-        srcpadding: 6,
-        fileprefix: 'image_',
-        frameRate: 24
-      },{
         title: 'KINETIC' ,
         subtitle: '',
         description: '' ,
