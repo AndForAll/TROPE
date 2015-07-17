@@ -16,10 +16,7 @@ $scope.step = 1;
 //for large images
 // $scope.imgsrc = $scope.currentTrope.frames.paths.large[1];
 //for sized thesis images
-$scope.imgsrc = $scope.currentTrope.frames.paths.sizedthesis[1];
-
-
-
+$scope.imgsrc = $scope.currentTrope.frames.sizedthesis[1];
 
 $scope.scrolledStage = null;
 
@@ -32,7 +29,7 @@ $scope.percentLoaded = 0;
 
 //FROM http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm
 // Preload the images; then, update display when returned.
-preloader.preloadImages( $scope.currentTrope.frames.paths.sizedthesis ).then(
+preloader.preloadImages( $scope.currentTrope.frames.sizedthesis ).then(
                    function handleResolve( imageLocations ) {
 
                        // Loading was successful.
@@ -61,8 +58,6 @@ preloader.preloadImages( $scope.currentTrope.frames.paths.sizedthesis ).then(
                    }
                );
 
-
-
 /////////////////////////////////
 // S C O P E    M E T H O D S //
 /////////////////////////////////
@@ -78,12 +73,14 @@ $scope.$on('scrolling', function($evt, a, locals) {
         //change image directly
         if($scope.targetStep != $scope.step){
             $scope.step = $scope.targetStep;
-            $scope.imgsrc = $scope.currentTrope.frames.paths.sizedthesis[$scope.step];
+            $scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
             console.log($scope.step);
         }
 
       });
   }); // END OF SCROLLING
+
+
 
 
 });

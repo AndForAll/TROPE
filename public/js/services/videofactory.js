@@ -9,24 +9,22 @@ angular.module('app.vidfactory', [])
   return {
     getFrames: function(id, length, padding, prefix ,frameRate) {
 
-      var frames = {
-        paths: {
-          large: [],
-          sizedthesis: []
-        }
-      };
+      var frames = {};
+      frames.large = [];
+      frames.sizedthesis = [];
+
 
       for(var i = 1; i <= length; i++){
         // images[i] = new Image();
         // frames.frames[i] = "../media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
         // frames.paths[i] = "../media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
         // frames.framesurl[i]= "http://localhost:3000/media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
-        frames.paths.large[i]="http://media.trope.cc/large/frames_"+id+"/"+ prefix + pad(i, padding)+".jpg";
+        frames.large[i]="http://media.trope.cc/large/frames_"+id+"/"+ prefix + pad(i, padding)+".jpg";
         //http://media.trope.cc/sized-thesis/frames_{{ID}}/image_{{FRAME_NUMBER}}.png
-        frames.paths.sizedthesis[i]="http://media.trope.cc/sized-thesis/frames_"+id+"/"+ prefix + pad(i, padding)+".png";
+        frames.sizedthesis[i]="http://media.trope.cc/sized-thesis/frames_"+id+"/"+ prefix + pad(i, padding)+".png";
 
       }
-      frames.params = (frames.paths.length-1) * frameRate;
+      frames.params = (frames.sizedthesis.length-1) * frameRate;
       return frames;
     }
   }
