@@ -12,10 +12,14 @@ console.log($scope.currentTrope);
 $scope.from = 0
 $scope.to = -1;
 $scope.step = 1;
+
 //for large images
 // $scope.imgsrc = $scope.currentTrope.frames.paths.large[1];
 //for sized thesis images
 $scope.imgsrc = $scope.currentTrope.frames.paths.sizedthesis[1];
+
+
+
 
 $scope.scrolledStage = null;
 

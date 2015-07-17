@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-html { box-sizing:border-box;}
-*,:before,:after{ box-sizing:inherit}
-
-/*
-
-MAIN DOC BODY / INDEX.HTML
-
-*/
-
-=======
 /*G E N E R A L*/
->>>>>>> origin/clean-and-simple-version
 body{
   font-family: 'Biryani', sans-serif;
   width: 100%;
@@ -20,39 +8,6 @@ body{
   background: yellow;
 }
 
-<<<<<<< HEAD
-/*attempt at menu*/
-/*.home_menu {
-  z-index: 5000;
-  top:0;
-  width: 100%;
-  height: 5%;
-  background: white;
-  padding-top:5%;
-  position: fixed;
-}
-
-.home_menu .img{
-  float: right;
-  position: fixed;
-}*/
-
-/*
-
-HOME PAGE WITH GALLERY
-
-*/
-
-/*FOR NEW SPLASH */
-#home_page{
-	width:100%;
-	text-align:center;
-  font-weight:900;
-  height:150%;
-  top: 0;
-  left: 0;
-  margin-top: -8%;
-=======
 .page_container{
 
 }
@@ -64,7 +19,6 @@ HOME PAGE WITH GALLERY
 }
 
 .gallery_tpl_container{
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -78,92 +32,12 @@ HOME PAGE WITH GALLERY
 }
 
 #title h1{
+  text-align: center;
 	text-transform:uppercase;
   font-size:10em;
+  background-color: yellow;
 }
 
-<<<<<<< HEAD
-#main-title {
-	letter-spacing:30px;
-  font-weight: 900;
-  font-family: 'Biryani', sans-serif;
-  padding-bottom: 20px;
-  padding-top:15%;
-
-}
-
-#sub-title{
-	font-weight:200;
-  font-family: 'Biryani', sans-serif;
-
-}
-
-/*.home-gallery-container {
-  background:white;
-  text-align: center;
-  width: 100%;
-  left:0;
-}*/
-
-.home-gallery-container {
-  background:white;
-  text-align: center;
-  width: 100.5%;
-  left:0;
-  margin-left: -.5%;
-}
-
-
-.galley-home {
-  width: 90%;
-  background:white;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.page-title{
-  letter-spacing:30px;
-  font-weight: 700;
-  font-size: 2em;
-  font-family: 'Biryani', sans-serif;
-}
-
-.page-subtitle{
-  letter-spacing:10px;
-  font-weight: 400;
-  font-size: 1em;
-  font-family: 'Biryani', sans-serif;
-  padding-bottom: 5%;
-  /*border-bottom-width:thin;
-  border-style: solid;
-  border-color: black;*/
-}
-
-.video-title{
-  font-family: 'Biryani', sans-serif;
-  font-weight: 200;
-  letter-spacing:10px;
-  font-size: 0.8em;
-}
-
-
-
-.gallery-item {
-  padding:2%;
-	padding-top:0%;
-  display:block;
-  width:28%;
-  margin:.5% 1%;
-  float:left;
-  /*margin-left: 4%;*/
-  padding-left: 2%;
-
-	padding-bottom: 5%;
-	padding-top:5%;
-	text-align:center;
-	overflow: hidden;
-=======
 /*H  O  M  E     G  A   L  L  E  R  Y*/
 
 #home_gallery{
@@ -171,21 +45,22 @@ HOME PAGE WITH GALLERY
 }
 
 .title_container{
-
+  padding-bottom:10%;
 }
 
 .page-title{
 	letter-spacing:30px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Biryani', sans-serif;
   padding-bottom: 20px;
-  padding-top:15%;
 
 }
 
 .page-subtitle{
-	font-weight:200;
+	font-weight:100;
   font-family: 'Biryani', sans-serif;
+  font-size:1em;
+  letter-spacing:5px;
 }
 
 .gallery_container{
@@ -193,115 +68,34 @@ HOME PAGE WITH GALLERY
   text-align: center;
   width:100%;
   position:relative;
+  height: 100%;
 }
 
 .gallery_child{
   text-align:center;
->>>>>>> origin/clean-and-simple-version
   transition: all 0.9s ease;
   text-transform: uppercase;
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  background: white;
-}
-
-<<<<<<< HEAD
-.gallery-item:hover{
-=======
-.gallery_child:hover{
->>>>>>> origin/clean-and-simple-version
   background:yellow;
   border-color: yellow;
-}
-
-<<<<<<< HEAD
-.galley-home{
-  background: white;
-  height: 0;
-  padding-bottom:50%;
-  padding-top: 5%;
-  /*margin-left: -2%;*/
-  /*width: 90%;*/
-}
-
-/*PLAY STATE WOOOOOO*/
-
-/*FOR PLAY MODAL*/
-.remote_message {
-  /*z-index: 1000;
-  background:yellow;
-  width:40%;
-  height: 50%;
-  margin-top: 10%;
-  margin-left:auto;
-  margin-right:auto;
-  /*border-style: solid;
-  border-width: 5px;
-  border-color: black;*/
-  font-family: 'Biryani', sans-serif;
-  text-align: center;
-  z-index: 2000;
-  /*float: left;*/
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50%;
-  /*background: white;*/
-}
-
-.remote_message  p{
-  font-weight: 400;
-  letter-spacing:5px;
-  font-size: 14px;
-}
-
-.remote_message .trope {
-  text-decoration: underline;
-  font-size: 20px;
-  background: white;
-}
-
-.remote_message #bottom-copy {
-  background: white;
-}
-
-.remote_message h4{
-  font-size: 2em;
   border-style: solid;
-  border-width: 5px;
+  border-width: thin;
+
+
+}
+
+.gallery_child:hover{
   border-color: black;
-  width: 60%;
-  padding: 2%;
-  margin-left: auto;
-  margin-right: auto;
+  background: white;
 }
 
-.video-title-modal{
-  font-family: 'Biryani', sans-serif;
-  font-weight: 900;
-  letter-spacing:40px;
-  font-size: 10em;
-  color: black;
-  /*position: fixed;*/
-  /*top:0;*/
-  /*left:0;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  /*width: 50%;*/
-  text-align: center;
-  /*width: auto;*/
-  /*width: 40%;*/
-
-}
-
-=======
 .gallery_child h2{
   font-family: 'Biryani', sans-serif;
   font-weight: 200;
   letter-spacing:10px;
   font-size: 0.8em;
+  padding-top:15%;
+  padding-bottom:15%;
+
 }
 
 .gallery_child a{
@@ -325,7 +119,11 @@ HOME PAGE WITH GALLERY
 }
 
 .overlay_tpl_container{
-
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:15;
 }
 
 /*T H E A T R E  F R A M E S*/
@@ -340,13 +138,48 @@ HOME PAGE WITH GALLERY
 }
 
 #frames_container img{
-  width:100%;
+  /*height:100%;*/
+  width: 100%;
 
+}
+
+.frame{
+
+}
+
+.trope_frame{
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  width:100%;
+  overflow: hidden;
+  background-size: 160%;
+  padding-bottom:100%;
+  top:0;
+}
+
+/*T H E A T R E  O V E R L A Y S*/
+#overlays_container{
+  width: 100%;
+  height:auto;
+}
+
+.overlay_text_container{
+  padding-top:20%;
+}
+
+#overlays_container h2{
+  letter-spacing:30px;
+  font-weight: 700;
+  font-family: 'Biryani', sans-serif;
+  padding-bottom: 20px;
+  font-size: 4em;
+  color: white;
 }
 
 /*//PUT THIS BACK IN I LIKED IT*/
 
->>>>>>> origin/clean-and-simple-version
 .home-btn{
   width: 10%;
   top: 0;
@@ -355,10 +188,6 @@ HOME PAGE WITH GALLERY
   position: fixed;
 
   /*outline: yellow solid 10px;*/
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/clean-and-simple-version
 }
 
 .home-btn svg {
@@ -386,192 +215,6 @@ HOME PAGE WITH GALLERY
   margin-top: -10%;
 }
 
-<<<<<<< HEAD
-.imghide{
-  display: none;
-}
-
-.imgshow{
-  display: block;
-}
-
-.modalhide{
-  display:none;
-}
-
-.modal{
-  display:block;
-  text-align: center;
-}
-
-
-
-
-#video {
-	position:fixed;
-	z-index:-1;
-	/*top:0;
-	right:0;
-	bottom:0;
-	left:0;*/
-	width:110%;
-  /*width:1200px;*/
-	/*height:100%;*/
-  /*height:0;
-  padding-bottom: 70%;
-  background-size: 160%;
-  background-position:50% 50%;*/
-}
-
-.videoTitleShow{
-  position: fixed;
-  letter-spacing:30px;
-  font-weight: 700;
-  font-size: 2em;
-  font-family: 'Biryani', sans-serif;
-  margin-top: 20%;
-}
-
-
-/*///for display frame numbers for testing...*/
-.frame-display{
-  z-index: 50000;
-
-  font-family: 'Biryani', sans-serif;
-  float:left;
-  position: fixed;
-  background-color: transparent;
-  width: 20%;
-  padding: 10%;
-}
-
-#frame_num{
-  font-size: 4em;
-  letter-spacing:30px;
-  font-weight: 900;
-  color: yellow;
-}
-
-/*CSS FOR PLAY STATE*/
-#scroll-stage {
-  /*height:1000px;*/
-}
-
-#play_content{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#play_content .container{
-    /*-webkit-transform: translate(-5%, -5%);
-  -moz-transform: translate(-5%, -5%);
-  -ms-transform: translate(-5%, -5%);
-  -o-transform: translate(-5%, -5%);
-  transform: translate(-5%, -5%);*/
-  position: absolute;
-  /*top: 50%;
-  left: 50%;*/
-	width:auto;
-	height:100%;
-  /*position:fixed;*/
-}
-
-.videoTitleShow {
-  /*position: absolute;*/
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align:center;
-  /*background-color:#fff;*/
-  /*z-index: 10;*/
-  display:block;
-}
-
-.videoTitleShow{
-  position: absolute;
-  font-size: 10em;
-  text-align: center;
-  /*z-index: 10;*/
-  /*color: #fff;*/
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:30px;
-  margin-left:auto;
-  margin-right:auto;
-  color: black;
-  /*background: url(https://s-media-cache-ak0.pinimg.com/736x/2f/6a/ea/2f6aea86ebfb9ab3164b40c84c54227b.jpg), white;
-  -webkit-background-clip: text;
-  color: transparent;*/
-
-  letter-spacing:30px;
-  font-weight: 900;
-  font-family: 'Biryani', sans-serif;
-  padding-bottom: 20px;
-  padding-top:15%;
-  display:block;
-}
-
-.videoTitleHide {
-  display:none;
-}
-
-.videoTitlegone{
-  display:none;
-}
-
-/* your style begins here */
-
-#stuff{
-	position: fixed;
-	z-index:1;
-}
-
-#container{
-	width:50%;
-}
-
-#phone_control{
-		width:100%;
-		text-align: center;
-		background:#91D3CF;
-		padding:20px;
-		margin-left:auto;
-		margin-right:auto;
-		/*position:fixed;*/
-		height:10000px;
-		display:block;
-	}
-
-
-/*//PHONE SITE*/
-#phone-title: {
-  text-transform:uppercase;
-  text-align: center;
-  background-color: black;
-
-  /*padding-top:25%;*/
-  height: 0;
-  padding-bottom:54%;
-}
-
-
-#phone-main-title{
-  text-align: center;
-  letter-spacing:20px;
-  font-weight: 700;
-  font-family: 'Biryani', sans-serif;
-  padding-bottom: 20px;
-  padding-top:10%;
-  font-size: 5em !important;
-}
-
-
-=======
->>>>>>> origin/clean-and-simple-version
 .hbtn {
   padding:2%;
 	padding-top:0%;
@@ -607,24 +250,6 @@ HOME PAGE WITH GALLERY
   border-width: 0px;
 }
 
-<<<<<<< HEAD
-.phone_container{
-  text-align: center;
-  padding-top:10%;
-}
-
-#remote-input {
-	font-size: 2.5em;
-	border: 0px;
-  border-bottom:5px;
-  border-style:solid;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-=======
->>>>>>> origin/clean-and-simple-version
 
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -634,13 +259,6 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-<<<<<<< HEAD
-    body{
-      background: yellow;
-    }
-
-=======
->>>>>>> origin/clean-and-simple-version
 }
 
 /* Portrait */
@@ -668,12 +286,6 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-<<<<<<< HEAD
-    body{
-      background: yellow;
-    }
-=======
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -684,25 +296,6 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      height: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-=======
->>>>>>> origin/clean-and-simple-version
 }
 
 /* Landscape */
@@ -712,26 +305,6 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      width: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-
-=======
->>>>>>> origin/clean-and-simple-version
 }
 
 /* ----------- iPhone 6 ----------- */
@@ -742,12 +315,6 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-<<<<<<< HEAD
-    body{
-      background: yellow;
-    }
-=======
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -757,25 +324,6 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      height: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-=======
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -785,26 +333,7 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      width: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-=======
 
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -816,12 +345,6 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-<<<<<<< HEAD
-    body{
-      background: yellow;
-    }
-=======
->>>>>>> origin/clean-and-simple-version
 
 }
 
@@ -831,26 +354,7 @@ HOME PAGE WITH GALLERY
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      height: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-=======
 
->>>>>>> origin/clean-and-simple-version
 }
 
 /* Landscape */
@@ -860,25 +364,6 @@ HOME PAGE WITH GALLERY
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
-<<<<<<< HEAD
-    #videophone {
-    	position:fixed;
-    	z-index:-1;
-    	/*top:0;
-    	right:0;
-    	bottom:0;
-    	left:0;*/
-    	/*width:110%;*/
-      width: 100%;
-      /*width:1200px;*/
-    	/*height:100%;*/
-      /*height:0;
-      padding-bottom: 70%;
-      background-size: 160%;
-      background-position:50% 50%;*/
-    }
-=======
 
->>>>>>> origin/clean-and-simple-version
 
 }
