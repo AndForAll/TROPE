@@ -65,7 +65,8 @@ preloader.preloadImages( $scope.currentTrope.frames.sizedthesis ).then(
 // S C O P E    M E T H O D S //
 /////////////////////////////////
 $scope.$on('scrolling', function($evt, a, locals) {
-
+      console.log(locals.$percentage);
+      $scope.scrollpercent = locals.$percentage;
       $scope.scrolledStage = 'scrolling';
 
       $scope.$apply(function animloop() {
@@ -83,13 +84,6 @@ $scope.$on('scrolling', function($evt, a, locals) {
             // };
             console.log($scope.step);
         }
-
-
-        // if($scope.step == 0){
-        //   $scope.showinfo = true;
-        // }else {
-        //   $scope.showinfo = false;
-        // }
 
       });
   }); // END OF SCROLLING

@@ -15,7 +15,8 @@ angular.module('myApp', ['ui.router',
   'app.preloader.factory',
 //   'app.vidUtils',
 //   //////E X T R A S
-  'pc035860.scrollWatch'
+  'pc035860.scrollWatch' ,
+  'ngMaterial'
 ])
 
   //IF WE WANT TO USE AN ANGULAR VARIABLE OR A SERVICE WE HAVE MADE

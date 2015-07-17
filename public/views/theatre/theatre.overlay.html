@@ -2,8 +2,16 @@
 
 <div layout="column" layout-align="space-around end" layout-padding layout-fill class="overlay_text_container">
 
+  <md-progress-linear class="md-warn" id="bufferloader" md-mode="buffer" value="{{scrollpercent}}" md-buffer-value="{{percentLoaded}}">
+  </md-progress-linear>
+
+<!-- <div>
   <h2>{{step}}</h2>
+  <h2>{{scrollpercent}}   %</h2>
   <h2>{{percentLoaded}}  %</h2>
+</div> -->
+
+
 
 </div>
 
@@ -13,5 +21,6 @@
 
 
 </div> -->
+
 
 </div>

@@ -3,7 +3,6 @@ var angular = angular || {};
 angular.module('app.router', [])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
       .state('Home', {
         abstract: true, //meaning we can never just go to "home" it will be "home.gallery" etc...
         url: '/',

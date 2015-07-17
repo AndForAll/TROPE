@@ -105,7 +105,7 @@ body{
 /*T H E A T R E*/
 
 #scroll-stage{
-
+  background: yellow;
 }
 
 .frame_tpl_container{
@@ -129,7 +129,7 @@ body{
 #frames_container{
   width: 100%;
   height:auto;
-
+  overflow: hidden;
 }
 
 #frames_container h2{
@@ -138,7 +138,9 @@ body{
 
 #frames_container img{
   /*height:100%;*/
-  width: 100%;
+  width: 110%;
+  margin-left: auto;
+  margin-right:auto;
 
 }
 
@@ -176,6 +178,24 @@ body{
   padding-bottom: 20px;
   font-size: 4em;
   color: white;
+}
+
+md-progress-linear[md-mode=buffer].md-warn .md-bar2{
+  background-color: yellow;
+  padding-bottom: 20%;
+}
+
+md-progress-linear[md-mode=buffer].md-warn .md-bar1{
+  background-color: grey;
+  padding-bottom: 20%;
+}
+
+md-progress-linear[md-mode="buffer"].md-warn .md-dashed::before{
+  background: radial-gradient(rgb(219, 208, 50) 0%, rgb(255, 241, 5) 16%, rgba(255, 255, 255, 0) 42%) !important;
+}
+
+md-progress-linear:not([md-mode=indeterminate]) .md-container{
+  height:800% !important ;
 }
 
 /*//PUT THIS BACK IN I LIKED IT*/
