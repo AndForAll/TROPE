@@ -76,18 +76,19 @@ angular.module('myApp', ['ui.router',
         srcpadding: 6,
         fileprefix: 'image_',
         frameRate: 100
-      },{
-        title: 'BLINK BLINK' ,
-        subtitle: '',
-        description: '' ,
-        length: 6168,
-        createdBy: '',
-        id: 'BB01',
-        frames: {},
-        srcpadding: 6,
-        fileprefix: 'image_',
-        frameRate: 24
-      } ];
+      }];
+      // ,{
+      //   title: 'BLINK BLINK' ,
+      //   subtitle: '',
+      //   description: '' ,
+      //   length: 6168,
+      //   createdBy: '',
+      //   id: 'BB01',
+      //   frames: {},
+      //   srcpadding: 6,
+      //   fileprefix: 'image_',
+      //   frameRate: 24
+      // } ];
 
   // //here we use the videofactory service we made so we can get
   // //the paths to all the img urls and other info we need

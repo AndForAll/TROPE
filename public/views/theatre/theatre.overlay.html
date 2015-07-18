@@ -2,18 +2,27 @@
 
 <div layout="column" layout-align="start start" layout-padding layout-fill class="overlay_text_container">
 
-  <md-progress-linear class="md-warn" id="bufferloader" md-mode="buffer" value="{{scrollpercent}}" md-buffer-value="{{percentLoaded}}">
+  <md-progress-linear ng-show="showProgress" class="md-warn" id="bufferloader" md-mode="buffer" value="{{scrollpercent}}" md-buffer-value="{{percentLoaded}}">
   </md-progress-linear>
 
   <!-- //show hide here -->
-<a><h2 class="menu-btn" ng-click="openMenu = !openMenu">/</h2></a>
+<a href=''><h2 class="menu-btn" ng-click="openMenu = !openMenu" ng-hide="openMenu">/</h2></a>
+<a href=''><h2 class="menu-btn" ng-click="openMenu = !openMenu" ng-show="openMenu">X</h2></a>
 
   <div class="menu">
     <div ng-show="openMenu" layout='column' layout-align="start start">
-      <h4>{{step}}</h4>
-      <h4>{{scrollpercent}}   %</h4>
-      <h4>{{percentLoaded}}  %</h4>
-      <h4 class="menu-btn-close" ng-click="openMenu=false">X</h4>
+      <a ui-sref="Home.gallery"><h4>Home</h4></a>
+      <!-- <h4>Top</h4> -->
+      <h4 ng-click="showProgress = !showProgress"><span ng-show="showProgress">Hide/</span><span ng-hide="showProgress">show/</span> progress bar</h4>
+      <h4 ng-click="showInfo = !showInfo">{{currentTrope.title}} INFO</h4>
+        <div ng-show="showInfo">
+          <p> {{currentTrope.title}} </p>
+          <p> {{currentTrope.createdBy}} </p>
+          <p> {{currentTrope.description}} </p>
+          <p>Step Number: {{step}}</p>
+          <p>viewed: {{scrollpercent}}%</p>
+          <p>Buffering {{percentLoaded}}% complete</p>
+        </div>
     </div>
   </div>
 

@@ -4,6 +4,8 @@ angular.module('app.controller.theatre', [])
 .controller('TheatreCtrl', function($scope, $rootScope, $stateParams, preloader) {
 
 $scope.openMenu = false;
+$scope.showProgress = true;
+$scope.showInfo = false;
 
 $scope.currentTrope = $rootScope.global.tropes[$stateParams.id];
 console.log($scope.currentTrope);
@@ -16,7 +18,6 @@ $scope.step = 1;
 // $scope.imgsrc = $scope.currentTrope.frames.large[1];
 //for sized thesis images
 $scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
-
 // $scope.frameImage = {
 //   'background-image': 'url('+$scope.imgsrc+')'
 // };
@@ -56,7 +57,7 @@ preloader.preloadImages( $scope.currentTrope.frames.sizedthesis ).then(
 
                        $scope.percentLoaded = event.percent;
 
-                       console.info( "Percent loaded:", event.percent );
+                      //  console.info( "Percent loaded:", event.percent );
 
                    }
                );
@@ -65,12 +66,12 @@ preloader.preloadImages( $scope.currentTrope.frames.sizedthesis ).then(
 // S C O P E    M E T H O D S //
 /////////////////////////////////
 $scope.$on('scrolling', function($evt, a, locals) {
-      console.log(locals.$percentage);
+      // console.log(locals.$percentage);
       $scope.scrollpercent = locals.$percentage;
       $scope.scrolledStage = 'scrolling';
 
       $scope.$apply(function animloop() {
-      console.log('SCROLLLLLLLLLL');
+      // console.log('SCROLLLLLLLLLL');
 
         //get the frame it should be on based on percentage
         $scope.targetStep = Math.round(locals.$progress * $scope.currentTrope.length);
@@ -82,7 +83,7 @@ $scope.$on('scrolling', function($evt, a, locals) {
             // $scope.frameImage = {
             //   'background-image': 'url('+$scope.imgsrc+')'
             // };
-            console.log($scope.step);
+            // console.log($scope.step);
         }
 
       });

@@ -27,7 +27,7 @@ body{
   background: yellow;
   /*padding-top:25%;*/
   height: 0;
-  padding-bottom:54%;
+  padding-bottom:40%;
   width:100%;
 }
 
@@ -67,6 +67,7 @@ body{
   background:white;
   text-align: center;
   height: 100%;
+  padding-bottom:20%;
 
 }
 
@@ -105,12 +106,12 @@ body{
 /*T H E A T R E*/
 
 #scroll-stage{
-  background: yellow;
+  background: black;
 }
 
 .frame_tpl_container{
   position: fixed;
-  top:0;
+  top:10%;
   left:0;
   width:100%;
   background-color: yellow;
@@ -138,7 +139,7 @@ body{
 
 #frames_container img{
   /*height:100%;*/
-  width: 110%;
+  width: 120%;
   margin-left: auto;
   margin-right:auto;
 
@@ -175,10 +176,10 @@ body{
   letter-spacing:30px;
   font-weight: 700;
   font-family: 'Biryani', sans-serif;
-  padding-bottom: 20px;
   font-size: 4em;
   color: white;
   text-align: left;
+
 }
 
 md-progress-linear[md-mode=buffer].md-warn .md-bar2{
@@ -197,6 +198,50 @@ md-progress-linear[md-mode="buffer"].md-warn .md-dashed::before{
 
 md-progress-linear:not([md-mode=indeterminate]) .md-container{
   height:800% !important ;
+}
+
+.menu h4{
+  letter-spacing:10px;
+  font-weight: 900;
+  font-family: 'Biryani', sans-serif;
+  font-size: 2em;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  padding:0;
+  margin:0;
+  transition: all 0.9s ease;
+  text-transform:uppercase;
+}
+
+.overlay_text_container a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.9s ease;
+}
+
+.overlay_text_container a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.menu a{
+    text-decoration: none;
+      color: white;
+}
+
+.menu h4:hover{
+  background-color:yellow;
+  text-decoration: none;
+}
+
+.menu p{
+  font-weight: 200;
+  font-family: 'Biryani', sans-serif;
+  font-size: 1em;
+  color: white;
+  text-align: left;
+  text-transform:uppercase;
 }
 
 /*//PUT THIS BACK IN I LIKED IT*/
