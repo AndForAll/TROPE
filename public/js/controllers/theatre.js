@@ -3,7 +3,7 @@ var angular = angular || {};
 angular.module('app.controller.theatre', [])
 .controller('TheatreCtrl', function($scope, $rootScope, $stateParams, preloader) {
 
-// $scope.showinfo = false;
+$scope.openMenu = false;
 
 $scope.currentTrope = $rootScope.global.tropes[$stateParams.id];
 console.log($scope.currentTrope);

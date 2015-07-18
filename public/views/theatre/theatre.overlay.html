@@ -1,16 +1,21 @@
 <div class="page_container" id="overlays_container">
 
-<div layout="column" layout-align="space-around end" layout-padding layout-fill class="overlay_text_container">
+<div layout="column" layout-align="start start" layout-padding layout-fill class="overlay_text_container">
 
   <md-progress-linear class="md-warn" id="bufferloader" md-mode="buffer" value="{{scrollpercent}}" md-buffer-value="{{percentLoaded}}">
   </md-progress-linear>
 
-<!-- <div>
-  <h2>{{step}}</h2>
-  <h2>{{scrollpercent}}   %</h2>
-  <h2>{{percentLoaded}}  %</h2>
-</div> -->
+  <!-- //show hide here -->
+<a><h2 class="menu-btn" ng-click="openMenu = !openMenu">/</h2></a>
 
+  <div class="menu">
+    <div ng-show="openMenu" layout='column' layout-align="start start">
+      <h4>{{step}}</h4>
+      <h4>{{scrollpercent}}   %</h4>
+      <h4>{{percentLoaded}}  %</h4>
+      <h4 class="menu-btn-close" ng-click="openMenu=false">X</h4>
+    </div>
+  </div>
 
 
 </div>

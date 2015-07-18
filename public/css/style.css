@@ -178,6 +178,7 @@ body{
   padding-bottom: 20px;
   font-size: 4em;
   color: white;
+  text-align: left;
 }
 
 md-progress-linear[md-mode=buffer].md-warn .md-bar2{
