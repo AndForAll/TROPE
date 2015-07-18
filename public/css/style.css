@@ -325,6 +325,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    #title{
+      text-transform:uppercase;
+      background: yellow;
+      /*padding-top:25%;*/
+      height: 0;
+      padding-bottom:80%;
+      width:100%;
+    }
+
+    #title h1{
+      text-align: center;
+      text-transform:uppercase;
+      font-size:5em;
+      background-color: yellow;
+    }
+
+
+
 }
 
 /* Portrait */
@@ -333,6 +351,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      height:100%;
+      /*width: 120%;*/
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 }
 
 /* Landscape */
@@ -341,6 +377,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      /*height:100%;*/
+      width: 120%;
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 
 }
 
@@ -352,6 +406,22 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    #title{
+      text-transform:uppercase;
+      background: yellow;
+      /*padding-top:25%;*/
+      height: 0;
+      padding-bottom:80%;
+      width:100%;
+    }
+
+    #title h1{
+      text-align: center;
+      text-transform:uppercase;
+      font-size:5em;
+      background-color: yellow;
+    }
+
 
 }
 
@@ -362,6 +432,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      height:100%;
+      /*width: 120%;*/
+      margin-left: auto;
+      margin-right:auto;
+
+    }
+
 }
 
 /* Landscape */
@@ -370,6 +458,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      /*height:100%;*/
+      width: 120%;
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 
 }
 
@@ -381,6 +487,22 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    #title{
+      text-transform:uppercase;
+      background: yellow;
+      /*padding-top:25%;*/
+      height: 0;
+      padding-bottom:80%;
+      width:100%;
+    }
+
+    #title h1{
+      text-align: center;
+      text-transform:uppercase;
+      font-size:5em;
+      background-color: yellow;
+    }
+
 
 }
 
@@ -391,6 +513,24 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      height:100%;
+      /*width: 120%;*/
+      margin-left: auto;
+      margin-right:auto;
+
+    }
+
 }
 
 /* Landscape */
@@ -400,6 +540,23 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
+
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      /*height:100%;*/
+      width: 120%;
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 
 }
 
@@ -411,6 +568,22 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
+    #title{
+    	text-transform:uppercase;
+      background: yellow;
+      /*padding-top:25%;*/
+      height: 0;
+      padding-bottom:80%;
+      width:100%;
+    }
+
+    #title h1{
+      text-align: center;
+    	text-transform:uppercase;
+      font-size:5em;
+      background-color: yellow;
+    }
+
 
 }
 
@@ -420,7 +593,23 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
 
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      height:100%;
+      /*width: 120%;*/
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 }
 
 /* Landscape */
@@ -430,6 +619,22 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
+    #frames_container{
+      width: 100%;
+      height:auto;
+      overflow: hidden;
+    }
 
+    #frames_container h2{
+
+    }
+
+    #frames_container img{
+      /*height:100%;*/
+      width: 120%;
+      margin-left: auto;
+      margin-right:auto;
+
+    }
 
 }
