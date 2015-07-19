@@ -3,26 +3,31 @@ var angular = angular || {};
 angular.module('app.controller.theatre', [])
 .controller('TheatreCtrl', function($scope, $rootScope, $stateParams, preloader) {
 
-$scope.openMenu = false;
-$scope.showProgress = true;
-$scope.showInfo = false;
+  $scope.openMenu = false;
+  $scope.showProgress = true;
+  $scope.showInfo = false;
 
-$scope.currentTrope = $rootScope.global.tropes[$stateParams.id];
-console.log($scope.currentTrope);
+  $scope.High_d = false;
+
+  $scope.currentTrope = $rootScope.global.tropes[$stateParams.id];
+  console.log($scope.currentTrope);
+
+  $scope.currentTrope_frames = $scope.currentTrope.frames_hd;
+  console.log($scope.currentTrope_frames.sizedthesis);
+
+//for large images
+// $scope.imgsrc = $scope.currentTrope.frames.large[1];
+//for sized thesis images
+  $scope.imgsrc = $scope.currentTrope_frames.sizedthesis[0];
+// $scope.frameImage = {
+//   'background-image': 'url('+$scope.imgsrc+')'
+// };
 
 $scope.from = 0
 $scope.to = -1;
 $scope.step = 1;
 
-//for large images
-// $scope.imgsrc = $scope.currentTrope.frames.large[1];
-//for sized thesis images
-$scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
-// $scope.frameImage = {
-//   'background-image': 'url('+$scope.imgsrc+')'
-// };
-
-$scope.scrolledStage = null;
+  $scope.scrolledStage = null;
 
 /////////////////////////////////
 // P R E      L O A D E R      //
@@ -33,7 +38,7 @@ $scope.percentLoaded = 0;
 
 //FROM http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm
 // Preload the images; then, update display when returned.
-preloader.preloadImages( $scope.currentTrope.frames.sizedthesis ).then(
+preloader.preloadImages( $scope.currentTrope_frames.sizedthesis ).then(
                    function handleResolve( imageLocations ) {
 
                        // Loading was successful.
@@ -73,13 +78,14 @@ $scope.$on('scrolling', function($evt, a, locals) {
       $scope.$apply(function animloop() {
       // console.log('SCROLLLLLLLLLL');
 
-        //get the frame it should be on based on percentage
-        $scope.targetStep = Math.round(locals.$progress * $scope.currentTrope.length);
+      //get the frame it should be on based on percentage
+          $scope.targetStep = Math.round(locals.$progress * $scope.currentTrope.length);
 
         //change image directly
         if($scope.targetStep != $scope.step){
             $scope.step = $scope.targetStep;
-            $scope.imgsrc = $scope.currentTrope.frames.sizedthesis[$scope.step];
+              $scope.imgsrc = $scope.currentTrope_frames.sizedthesis[$scope.step];
+            console.log($scope.imgsrc);
             // $scope.frameImage = {
             //   'background-image': 'url('+$scope.imgsrc+')'
             // };

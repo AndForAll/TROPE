@@ -9,7 +9,7 @@ body{
 }
 
 .page_container{
-
+  padding-bottom:5%;
 }
 
 /*H  O  M  E*/
@@ -45,15 +45,9 @@ body{
 }
 
 .title_container{
+  padding-top:10%;
   padding-bottom:10%;
-}
-
-.page-title{
-	letter-spacing:30px;
-  font-weight: 700;
-  font-family: 'Biryani', sans-serif;
-  padding-bottom: 20px;
-
+  position: relative;
 }
 
 .page-subtitle{
@@ -61,6 +55,10 @@ body{
   font-family: 'Biryani', sans-serif;
   font-size:1em;
   letter-spacing:5px;
+  padding-left: 20%;
+  padding-right:20%;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .gallery_container{
@@ -68,6 +66,7 @@ body{
   text-align: center;
   height: 100%;
   padding-bottom:20%;
+  display: block;
 
 }
 
@@ -79,6 +78,7 @@ body{
   border-color: yellow;
   border-style: solid;
   border-width: thin;
+  overflow: hidden;
 
 
 }
@@ -102,6 +102,39 @@ body{
   text-decoration: none;
   color: black;
 }
+
+.gallery_container_phone{
+  background:white;
+  text-align: center;
+  height: 100%;
+  padding-bottom:20%;
+  display: none;
+}
+
+.gallery_child_phone{
+  text-align:center;
+  text-transform: uppercase;
+  background:yellow;
+}
+
+.gallery_child_phone:hover{
+  background-color: white;
+}
+
+.gallery_child_phone h2{
+  font-family: 'Biryani', sans-serif;
+  font-weight: 900;
+  letter-spacing:10px;
+  font-size: 4em;
+  /*padding-top:5%;
+  padding-bottom:5%;*/
+}
+
+.gallery_child_phone a{
+  text-decoration: none;
+  color: black;
+}
+
 
 /*T H E A T R E*/
 
@@ -370,22 +403,13 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    #title{
-      text-transform:uppercase;
-      background: yellow;
-      /*padding-top:25%;*/
-      height: 0;
-      padding-bottom:100%;
-      width:100%;
+    .gallery_container{
+      display: none !important;
     }
 
-    #title h1{
-      text-align: center;
-      text-transform:uppercase;
-      font-size:5em;
-      background-color: yellow;
+    .gallery_container_phone{
+      display: block !important;
     }
-
 
 }
 
@@ -396,23 +420,6 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      height:100%;
-      /*width: 120%;*/
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 
 }
 
@@ -423,23 +430,6 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      /*height:100%;*/
-      width: 120%;
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 
 }
 
@@ -451,22 +441,13 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    #title{
-      text-transform:uppercase;
-      background: yellow;
-      /*padding-top:25%;*/
-      height: 0;
-      padding-bottom:80%;
-      width:100%;
+    .gallery_container{
+      display: none !important;
     }
 
-    #title h1{
-      text-align: center;
-      text-transform:uppercase;
-      font-size:5em;
-      background-color: yellow;
+    .gallery_container_phone{
+      display: block !important;
     }
-
 
 }
 
@@ -477,23 +458,6 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      height:100%;
-      /*width: 120%;*/
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 
 }
 
@@ -504,23 +468,6 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      /*height:100%;*/
-      width: 120%;
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 
 }
 
@@ -532,22 +479,13 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-    #title{
-    	text-transform:uppercase;
-      background: yellow;
-      /*padding-top:25%;*/
-      height: 0;
-      padding-bottom:80%;
-      width:100%;
+    .gallery_container{
+      display: none !important;
     }
 
-    #title h1{
-      text-align: center;
-    	text-transform:uppercase;
-      font-size:5em;
-      background-color: yellow;
+    .gallery_container_phone{
+      display: block !important;
     }
-
 
 }
 
@@ -557,23 +495,7 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
 
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      height:100%;
-      /*width: 120%;*/
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 }
 
 /* Landscape */
@@ -583,22 +505,5 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      /*height:100%;*/
-      width: 120%;
-      margin-left: auto;
-      margin-right:auto;
-
-    }
 
 }

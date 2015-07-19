@@ -39,7 +39,8 @@ angular.module('myApp', ['ui.router',
         // length: 2500,
         createdBy: '',
         id: 'YOGA01',
-        frames: {},
+        frames_hd: {},
+        frames_sd: {},
         srcpadding: 6,
         fileprefix: 'image_',
         frameRate: 24
@@ -50,7 +51,8 @@ angular.module('myApp', ['ui.router',
           length: 490,
           createdBy: '',
           id: 'ASH01',
-          frames: {},
+          frames_hd: {},
+          frames_sd: {},
           srcpadding: 6,
           fileprefix: 'image_',
           frameRate: 24
@@ -61,7 +63,8 @@ angular.module('myApp', ['ui.router',
         length: 1955,
         createdBy: 'CHEN',
         id: 'BURY02',
-        frames: {},
+        frames_hd: {},
+        frames_sd: {},
         srcpadding: 6,
         fileprefix: 'image_',
         frameRate: 24
@@ -72,7 +75,8 @@ angular.module('myApp', ['ui.router',
         length: 48,
         createdBy: '',
         id: 'BURY01',
-        frames: {},
+        frames_hd: {},
+        frames_sd: {},
         srcpadding: 6,
         fileprefix: 'image_',
         frameRate: 100
@@ -94,7 +98,10 @@ angular.module('myApp', ['ui.router',
   // //the paths to all the img urls and other info we need
   for(var i = 0; i < $rootScope.global.tropes.length; i++){
     var trope = $rootScope.global.tropes[i];
-    $rootScope.global.tropes[i].frames = VideoFactory.getFrames(trope.id,trope.length,trope.srcpadding,trope.fileprefix,trope.frameRate);
+    $rootScope.global.tropes[i].frames_hd = VideoFactory.getFramesHD(trope.id,trope.length,trope.srcpadding,trope.fileprefix,trope.frameRate);
+    //to do sd testing
+    var sdlength = trope.length/3;
+    $rootScope.global.tropes[i].frames_sd = VideoFactory.getFramesSD(trope.id,sdlength,trope.srcpadding,trope.fileprefix,trope.frameRate);
   }
   console.log('THESE ARE THE TROPES');
   console.log($rootScope.global.tropes);
