@@ -14,7 +14,7 @@
   <div class='gallery_container' layout="row" layout-align="space-around center" layout-wrap layout-margin >
 
     <!-- THIS WILL BE REPEATED FOR EACH TROPE IN THE GALLERY -->
-    <div class="gallery_child" ng-repeat='trope in tropes' flex="20" flex-sm="80">
+    <div class="gallery_child" ng-repeat='trope in tropes' flex-gt-sm="20" flex-sm="80">
       <a ui-sref="Theatre.main({id: $index})"><h2 >{{trope.title}}</h2></a>
     </div>
 

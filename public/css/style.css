@@ -320,7 +320,7 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
+/*@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -328,7 +328,6 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
     #title{
       text-transform:uppercase;
       background: yellow;
-      /*padding-top:25%;*/
       height: 0;
       padding-bottom:80%;
       width:100%;
@@ -343,60 +342,25 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
 
 
 
-}
+}*/
 
 /* Portrait */
-@media only screen
+/*@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      height:100%;
-      /*width: 120%;*/
-      margin-left: auto;
-      margin-right:auto;
-
-    }
-}
+}*/
 
 /* Landscape */
-@media only screen
+/*@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-    #frames_container{
-      width: 100%;
-      height:auto;
-      overflow: hidden;
-    }
-
-    #frames_container h2{
-
-    }
-
-    #frames_container img{
-      /*height:100%;*/
-      width: 120%;
-      margin-left: auto;
-      margin-right:auto;
-
-    }
-
-}
+}*/
 
 /* ----------- iPhone 5 and 5S ----------- */
 
@@ -411,7 +375,7 @@ md-progress-linear:not([md-mode=indeterminate]) .md-container{
       background: yellow;
       /*padding-top:25%;*/
       height: 0;
-      padding-bottom:80%;
+      padding-bottom:100%;
       width:100%;
     }
 
