@@ -80,6 +80,42 @@ angular.module('myApp', ['ui.router',
         srcpadding: 6,
         fileprefix: 'image_',
         frameRate: 100
+      },{
+        title: 'MAKE ^^' ,
+        subtitle: '',
+        description: 'TESTING TITTIES (.)(.) - 1979 FRAMES - 25FPS - 25 FPSCROLL' ,
+        length: 1979,
+        createdBy: 'LEAH',
+        id: 'LEAH01',
+        frames_hd: {},
+        frames_sd: {},
+        srcpadding: 4,
+        fileprefix: 'IMG_',
+        frameRate: 25
+      },{
+        title: 'MAKE UP TWO YA' ,
+        subtitle: '',
+        description: 'THIS IS A TEST - MAY NOT WORK SO MANY FRAMES - 5327 FRAMES - 25FPS - 25 FPSCROLL' ,
+        length: 5327,
+        createdBy: 'LEAH',
+        id: 'LEAH02',
+        frames_hd: {},
+        frames_sd: {},
+        srcpadding: 4,
+        fileprefix: 'IMG_',
+        frameRate: 25
+      },{
+        title: 'MAKE UP TWO YA (12 FPS TEST)' ,
+        subtitle: '',
+        description: 'THIS IS A TEST OF AN EXPORT OF 12FPS - 2557 FRAMES - 12 FPSCROLL' ,
+        length: 2557,
+        createdBy: 'LEAH',
+        id: 'LEAH03',
+        frames_hd: {},
+        frames_sd: {},
+        srcpadding: 4,
+        fileprefix: 'IMG_',
+        frameRate: 12
       }];
       // ,{
       //   title: 'BLINK BLINK' ,
