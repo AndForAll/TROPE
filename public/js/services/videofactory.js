@@ -19,7 +19,9 @@ angular.module('app.vidfactory', [])
         // frames.frames[i] = "../media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
         // frames.paths[i] = "../media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
         // frames.framesurl[i]= "http://localhost:3000/media/frames_"+id+"/"+prefix+pad(i, padding)+".jpg";
-        frames.large[i]="http://media.trope.cc/large/frames_"+id+"/"+ prefix + pad(i, padding)+".jpg";
+
+        ///THIS ONE BELOW DOES WORK BUT I"M REMOVING LARGE IMAGES FOR MEMORY REASONS.....
+        // frames.large[i]="http://media.trope.cc/large/frames_"+id+"/"+ prefix + pad(i, padding)+".jpg";
         //http://media.trope.cc/sized-thesis/frames_{{ID}}/image_{{FRAME_NUMBER}}.png
         frames.sizedthesis[i]="http://media.trope.cc/sized-thesis/frames_"+id+"/"+ prefix + pad(i, padding)+".png";
 
